@@ -16,8 +16,6 @@ export function execute(message) {
         number
     });
 
-    console.log(`The number is ${number}`);
-
     channel.send(`The number is in between 1-7000. Good luck!`);
 
     return message.reply(`✅ | Game started at <#${channel.id}>! Guess the number between 1-7000.`);

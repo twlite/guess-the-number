@@ -9,7 +9,15 @@ const client = new Client({
     ws: {
         properties: {
             $browser: "Discord Android"
-        }
+        },
+    },
+    presence: {
+        activities: [
+            {
+                name: "Guess The Number",
+                type: "COMPETING"
+            }
+        ]
     },
     allowedMentions: {
         parse: []
