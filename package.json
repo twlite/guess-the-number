@@ -1,0 +1,27 @@
+{
+  "name": "guess-the-number",
+  "version": "0.1.0",
+  "description": "Simple discord bot for Guess The Number event",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevAndromeda/guess-the-number.git"
+  },
+  "author": "DevAndromeda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevAndromeda/guess-the-number/issues"
+  },
+  "homepage": "https://github.com/DevAndromeda/guess-the-number#readme",
+  "dependencies": {
+    "discord.js": "^13.4.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.4"
+  }
+}
