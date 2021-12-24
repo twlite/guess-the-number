@@ -9,14 +9,14 @@ export function execute(message) {
     const channel = message.mentions.channels.first();
     if (!channel || !channel.isText()) return message.reply("❌ | You need to mention a channel where I can send messages");
 
-    const number = Math.floor(Math.random() * 7000) + 1;
+    const number = Math.floor(Math.random() * 3000) + 1;
 
     GTNStore.set(message.guildId, {
         channel: channel.id,
         number
     });
 
-    channel.send(`The number is in between 1-7000. Good luck!`);
+    channel.send(`The number is in between 1-3000. Good luck!`);
 
-    return message.reply(`✅ | Game started at <#${channel.id}>! Guess the number between 1-7000.`);
+    return message.reply(`✅ | Game started at <#${channel.id}>! Guess the number between 1-3000.`);
 }
