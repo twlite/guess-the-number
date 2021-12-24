@@ -66,4 +66,4 @@ function checkWinner(message) {
 }
 
 await loadCommands();
-await client.login();
+await client.login(process.env.DISCORD_TOKEN);
