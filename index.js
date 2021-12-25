@@ -61,7 +61,6 @@ function checkWinner(message) {
     if (!data) return;
     const { number, channel } = data;
     if (message.channelId !== channel) return;
-    if (isNaN(message.content)) return;
     if (message.content == number) {
         GTNStore.delete(message.guildId);
         return message.reply({
